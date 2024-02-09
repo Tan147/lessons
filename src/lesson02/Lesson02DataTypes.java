@@ -85,9 +85,13 @@ public class Lesson02DataTypes {
         // явное (тип)
         short shortValue = (short) intValue;
 
-
-
-
+        int sum = 10;
+        sum = sum + 10; //будет 20
+        sum += 10; // теперь будет 30, строка 89 и 90 аналогичны
+        sum -= 10; //20
+        sum *= 10; //200
+        sum /= 10; //20
+        sum %= 10; //0
 
 
 
