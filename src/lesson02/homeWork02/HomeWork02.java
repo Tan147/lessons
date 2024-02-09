@@ -23,6 +23,27 @@ public class HomeWork02 {
 
         System.out.println(33%2);
 
+        /*
+        Какой тип у doubleResult01 и почему?       - тип double, потому что в правой части явно указываем double
+        Чему равно значение doubleResult01 и почему?   - равно 1,0, потому что деление взято в скобки, делится тип int
+        на тип int, и результат деления будет 1 целое число, и оно приводится к типу double, получается 1,0
+
+        int num01 = 3;
+        int num02 = 2;
+        int result = num01 / num02;
+        var doubleResult01 = (double) (num01 / num02);
+         */
+
+        int num01 = 3;
+        int num02 = 2;
+        int result = num01 / num02;
+        var doubleResult01 = (double) (num01 / num02);
+        System.out.println(doubleResult01);
+
+        /*
+
+         */
+
 
 
     }
