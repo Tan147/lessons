@@ -49,6 +49,68 @@ public class RelationalAndLogicalOperators {
         else System.out.println("Обработка запроса завершилась неудачей");
 
 
+
+        int maxScoreValue = 100;
+        int currentScoreValue01 = 20;
+        if (currentScoreValue01 == maxScoreValue) {
+            System.out.println("Вы набрали достаточное " +
+                    "количество очков");
+        } else {
+            System.out.println("Вы не успели набрать достаточное " +
+                    "количество очков. Попробуйте еще раз");
+        }
+
+        char currentChar = 'a';
+        if (currentChar == 'a' || currentChar == 'z') {
+            System.out.println("Ваша роль - пользователь");
+        } else if (currentChar == 'x') {
+            System.out.println("Ваша роль - администратор");
+        } else {
+            System.out.println("Вам еще не выдана роль");
+        }
+
+        // фигурные скобки можно опустить, если if соответствует одна инструкция
+        /* boolean requestResult = false;
+        if (requestResult) System.out.println("Запрос успешно обработан");
+        else System.out.println("Обработка запроса завершилась неудачей");
+
+        if (requestResult)
+            System.out.println("Запрос успешно обработан");
+        else
+            System.out.println("Обработка запроса завершилась неудачей");
+
+        if (requestResult) {
+            System.out.println("Запрос успешно обработан");
+        } else {
+            System.out.println("Обработка запроса завершилась неудачей");
+            System.out.println("Попробуйте в следующий раз");
+        }
+
+         */
+
+
+        // if (requestResult/* == true*/) System.out.println("Запрос успешно обработан");
+        // if (!requestResult/* == false*/) System.out.println("Запрос успешно обработан");
+
+        // В чём разница?
+        currentChar = 'a';
+        if (currentChar == 'a' || currentChar == 'z') {
+            System.out.println("Ваша роль - пользователь");
+        } else if (currentChar == 'x') {
+            System.out.println("Ваша роль - администратор");
+        }
+
+        currentChar = 'a';
+        if (currentChar == 'a' || currentChar == 'z') {
+            System.out.println("Ваша роль - пользователь");
+        }
+        if (currentChar == 'x') {
+            System.out.println("Ваша роль - администратор");
+        }
+
+
+
+
         var x = 5;
         var y = 7;
         var z = 10;
@@ -67,21 +129,19 @@ public class RelationalAndLogicalOperators {
          если пользователь набрал от 80 до 89, он занял второе место,
          если пользователь набрал меньше 80, он не занял никакого места.
          Вывести в консоль, какое место занял пользователь.
-         Сделать эту задачу!!!
-
          */
-        /*
 
-        var currentScoreValue;
-        if (x>y && x>z) {
-            System.out.println(x);
-        } else if (y>x && y>z) {
-            System.out.println(y);
+        int currentScoreValue;
+        currentScoreValue = 91;
+        if (currentScoreValue >= 90) {
+            System.out.println("1 место");
+        } else if (currentScoreValue >=80 && currentScoreValue <= 89) {
+            System.out.println("2 место");
         } else {
-            System.out.println(z);
+            System.out.println("0 место");
         }
 
-         */
+
 
         var floorNumber = 5;
         switch(floorNumber) {
@@ -90,6 +150,9 @@ public class RelationalAndLogicalOperators {
             case 5 -> System.out.println("2 квартиры");
 
         }
+
+
+
 
 
 
