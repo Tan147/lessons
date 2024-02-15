@@ -139,6 +139,7 @@ public class StringLesson {
             System.out.println(formattedString);
 
             // class MessageFormat
+
             // {index}
             // {index, type}
             // {index, type, style}
