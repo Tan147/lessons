@@ -19,63 +19,31 @@ public class HomeWork04 {
 
         Scanner scanner01 = new Scanner(System.in);
         int userInput;
-        int mid = 1;
         System.out.println("Загадайте положительное целое число от 1 до 100 включительно");
-        for (int a = 1, b = 100; mid <= 100; b--) {
+        for (int a = 1, b = 100, mid = 1; mid >= 1 && mid <= 100; b ++) {
             mid = (b + 1) / 2;
-            System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА");
+            System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА.");
+            userInput = scanner01.nextInt();
             while (scanner01.hasNextInt() && (userInput = scanner01.nextInt()) >= 0) {
                 if (userInput == 1) {
                     System.out.println("Я угадал! Загаданное число: " + mid);
                     break;
                 } else if (userInput == 0) {
-                    System.out.println("Загаданное число больше " + mid + " или меньше " + mid + "? Для ответа используйте числа 0 - если меньше и 1 - если больше");
-                    while (scanner01.hasNextInt() && (userInput = scanner01.nextInt()) >= 0 && mid <= 100 && mid >= 1) {
-                        if (userInput == 0) {
-                            mid = mid - ((mid + 1) / 2);
-                            System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА");
+                    System.out.println("Загаданное число больше " + mid + " или меньше " + mid + "? Для ответа используйте числа 0 - МЕНЬШЕ и 1 - БОЛЬШЕ.");
+                    if ((userInput = scanner01.nextInt()) == 0) {
+                        mid = mid - ((mid + 1) / 2);
+                        System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА.");
+                    } else if ((userInput = scanner01.nextInt()) == 1) {
+                        mid = mid + ((mid + 1) / 2);
+                        System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА.");
+                    }
 
-                        } else if (userInput == 1) {
-                            while (scanner01.hasNextInt() && (userInput = scanner01.nextInt()) >= 0 && mid <= 100 && mid >= 1) {
-                                mid = mid + ((mid + 1) / 2);
-                                System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА");
-                            }
-
-                        } else {
-                            System.out.println("Загаданное число больше " + mid + " или меньше " + mid + "? Для ответа используйте числа 0 - если меньше и 1 - если больше");
-
-                        }
-
-                        }
-                } else {
-                    System.out.println("Для ответа используйте числа 0 - НЕТ и 1 - ДА");
                 }
-
             }
 
         }
 
-        //int number, a = 1, b = 100;
-        //int mid = (b + 1) / 2;
-        /*
-        System.out.println("Загадайте положительное целое число от 1 до 100 включительно");
-        System.out.println("Загаданное число равно " + mid + "? Для ответа используйте числа 0 - НЕТ и 1 - ДА");
-        while (scanner01.hasNextInt() && (userInput = scanner01.nextInt()) >= 0) {
-            if (userInput == 1) {
-                System.out.println("Я угадал! Загаданное число: " + mid);
-            } else {
-                System.out.println("Загаданное число больше " + mid + " или меньше " + mid + "? Для ответа используйте числа 0 - если меньше и 1 - если больше");
-                if (scanner01.hasNextInt() && (userInput = scanner01.nextInt()) == 0 && mid != 0) {
-                    mid = (mid + 1) / 2;
-                    System.out.println("Загаданное число больше " + mid + "или меньше " + mid + "? Для ответа используйте числа 0 - если меньше и 1 - если больше");
-                } else {
-                    mid = (b - mid) / 2 + mid;
-                    System.out.println("Загаданное число больше " + mid + "или меньше " + mid + "? Для ответа используйте числа 0 - если меньше и 1 - если больше");
-                }
-            }
 
-    }
 
-         */
     }
 }
