@@ -12,8 +12,8 @@ public class IncrementAndDecrement {
 
         // Пользователь вводит положительные целые числа.
         // Нужно найти их сумму.
+       // import java.util.Scanner;  - это в самом начале написать
 
-       // import java.util.Scanner;
         Scanner scanner01 = new Scanner(System.in);
         System.out.println("Вводите положительные целые числа");
         //int in = scanner01.nextInt();  //здесь прога остановится и будет ждать ввода пользователя

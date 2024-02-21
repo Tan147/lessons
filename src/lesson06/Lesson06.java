@@ -111,7 +111,7 @@ public class Lesson06 {
         вывести получившийся массив в консоль
          */
 
-
+        /*
         Scanner s = new Scanner(System.in);
         int lenArr = s.nextInt();
         String[] words = new String[lenArr];
@@ -138,7 +138,7 @@ public class Lesson06 {
 
 
 
-
+        */
 
 
 

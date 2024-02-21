@@ -37,6 +37,18 @@ public class test {
             }
 
 
+            //Пользователь вводит положит.целые числа. Нужно найти их сумму
+            Scanner scanner02 = new Scanner(System.in);
+            System.out.println("Вводите положительные целые числа");
+            int userInput02;
+            int sum02 = 0;
+            while (scanner02.hasNextInt() && (userInput02 = scanner02.nextInt()) > 0) {
+                sum02 += userInput02;
+            }
+            System.out.println(sum02);
+            //продолжается пока пользовтель введет либо не число (напр. строку), либо число меньше 0 или = 0, тогда цикл прекратится
+
+
 
         }
 
