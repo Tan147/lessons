@@ -1,11 +1,6 @@
-package lesson06;
-import java.text.MessageFormat;
-import java.util.Arrays;
-import java.util.Formatter;
-import java.util.Locale;
-import java.util.Scanner;
+package lesson05;
 
-public class Lesson06 {
+public class Lesson052 {
     public static void main(String[] args) {
 
         /*
