@@ -17,11 +17,11 @@ public class Lesson06 {
         Author author03 = new Author("Макар");
         Author author04 = new Author(3, "Саша", "sasha@gmail.com");
 
-        Book book01 = new Book(1, "JDK21", 100);
-        book01.setNumberOfPages(132);
-        book01.setPrice(200);
+        // ошибка в этой строке   Book book01 = new Book(1, "JDK21", 100);
+        //book01.setNumberOfPages(132);
+        //book01.setPrice(200);
 
-        System.out.println(book01.getId());
+        //System.out.println(book01.getId());
 
 
 
