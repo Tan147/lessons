@@ -1,9 +1,7 @@
-package com.tatiana.project.lesson6;
+package com.tatiana.project;
 
-import com.tatiana.project.lesson6.books.Author;
-import com.tatiana.project.lesson6.books.Book;
-
-import java.util.Scanner;
+import com.tatiana.project.lesson07.books.Author;
+import com.tatiana.project.lesson07.books.Book;
 
 public class Lesson06 {
     public static void main(String[] args) {

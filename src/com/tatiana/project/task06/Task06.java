@@ -1,7 +1,4 @@
-package com.tatiana.project.lesson6.task06;
-import com.tatiana.project.lesson6.task06.Climber;
-
-import java.util.Arrays;
+package com.tatiana.project.task06;
 
 public class Task06 {
     public static void main(String[] args) {

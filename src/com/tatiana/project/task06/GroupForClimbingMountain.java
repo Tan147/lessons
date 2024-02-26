@@ -1,4 +1,4 @@
-package com.tatiana.project.lesson6.task06;
+package com.tatiana.project.task06;
 
 public class GroupForClimbingMountain {
 

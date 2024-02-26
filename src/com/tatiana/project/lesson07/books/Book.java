@@ -1,4 +1,4 @@
-package com.tatiana.project.lesson6.books;
+package com.tatiana.project.lesson07.books;
 
 public class Book {
     //идентификатор - обязат. св-во
