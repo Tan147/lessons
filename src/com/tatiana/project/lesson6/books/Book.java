@@ -12,7 +12,7 @@ public class Book {
     private int price;
     private Author[] authors; //Author это тип данных
 
-    private Book(int id, String title, int price) {
+    public Book(int id, String title, int price) {
         if (id <= 0)
             throw new IllegalArgumentException("id д.б. положительным");
         if (price <= 100)
@@ -30,10 +30,10 @@ public class Book {
         if (title != null && !title.isEmpty())
             this.title = title;
 
-        if (title != null && !title.equals(""))  //можно так проверка на то, чтобы не было пустой стркокой заполнено
+        if (title != null && !title.equals(""))  //можно так проверка на то, чтобы не было пустой строкой заполнено
             this.title = title;
 
-        if (!"".equals(title)) // и такой вариант проверки, он лучше чем через equals
+        if (!"".equals(title)) // и такой вариант проверки
             this.title = title;
 
          */
@@ -42,6 +42,7 @@ public class Book {
         }
 
         //сеттеры
+    // методы, которые устанавливают значения свойств, называют сеттерами
 
     public void setPrice(int price) {
         this.price = price;
@@ -51,6 +52,7 @@ public class Book {
     }
 
     //геттеры для чтения
+    // методы, которые возвращают значения свойств, называют геттерами
     public int getId() {
         return id;
     }
@@ -62,6 +64,17 @@ public class Book {
     public int getNumberOfPages() {
         return numberOfPages;
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    /*
+    public void setPrice(int price){
+           if (price <= this.price) return;
+           this.price = price;
+    }
+    */
 
 
 

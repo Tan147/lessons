@@ -17,15 +17,14 @@ public class Lesson06 {
         Author author03 = new Author("Макар");
         Author author04 = new Author(3, "Саша", "sasha@gmail.com");
 
-        // ошибка в этой строке   Book book01 = new Book(1, "JDK21", 100);
-        //book01.setNumberOfPages(132);
-        //book01.setPrice(200);
+        Book book01 = new Book(1, "JDK21", 100);
+        book01.setNumberOfPages(132);
+        book01.setPrice(200);
+        int id = book01.getId();
+        System.out.println(book01.getId());
+        System.out.println(book01.getPrice());
 
-        //System.out.println(book01.getId());
-
-
-
-
+        System.out.println(book01.getId());
 
 
     }
