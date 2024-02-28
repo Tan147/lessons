@@ -36,4 +36,11 @@ public class Unit {
 
 
 
+    /*
+    Запретить наследование
+    final class
+    также и с методами
+    public final void ...
+     */
 }
+

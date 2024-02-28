@@ -1,4 +1,4 @@
-package com.tatiana.project;
+package com.tatiana.project.lesson6;
 
 import com.tatiana.project.lesson07.books.Author;
 import com.tatiana.project.lesson07.books.Book;
