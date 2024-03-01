@@ -1,5 +1,7 @@
 package com.tatiana.project.task06;
 
+import com.tatiana.project.lesson08.Unit;
+
 public class Task06 {
     public static void main(String[] args) {
         /*
@@ -24,9 +26,27 @@ public class Task06 {
         Mountain mountain02 = new Mountain("Elbrus", "Russia", 500);
         Mountain mountain03 = new Mountain("Kazbek", "Georgia", 200 );
 
-        String[] climbers01 = new String[3];
+        /*String[] climbers01 = new String[3];
         String[] climbers02 = new String[2];
-        String[] climbers03 = new String[2];
+        String[] climbers03 = new String[2];*/
+
+        Climber[] climbers01 = new Climber[3];
+        Climber[] climbers02 = new Climber[2];
+        Climber[] climbers03 = new Climber[2];
+        climbers01[0] = climber01;
+        climbers01[1] = climber02;
+        climbers01[2] = climber03;
+        boolean groupEnrollmentIsOpen01 = false;
+
+
+        climbers02[0] = climber04;
+        climbers02[1] = climber05;
+        boolean groupEnrollmentIsOpen02 = true;
+
+        climbers03[0] = climber06;
+        climbers03[1] = climber07;
+        boolean groupEnrollmentIsOpen03 = true;
+
 
 
 

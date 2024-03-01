@@ -14,4 +14,8 @@ public class GroupForClimbingMountain {
         this.groupEnrollmentIsOpen = groupEnrollmentIsOpen;
         this.mountain = mountain;
     }
+    public boolean getGroupEnrollmentIsOpen() {
+        return groupEnrollmentIsOpen;
+    }
+
 }

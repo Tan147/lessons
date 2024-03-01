@@ -30,11 +30,16 @@ public class Unit {
     public int getHealthPoint() {
         return healthPoint;
     }
+
     public int getSpeedPoint() {
         return speedPoint;
     }
 
 
+    // реализовать метод void rest(): увеличивает healthPoint на 1,
+    // 1. если текущее значение 0 или отрицательное число,
+    // healthPoint не увеличивается
+    // 2. healthPoint не может превышать изначального значения
 
     /*
     Запретить наследование
