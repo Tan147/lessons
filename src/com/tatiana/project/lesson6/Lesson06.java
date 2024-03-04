@@ -22,8 +22,25 @@ public class Lesson06 {
         System.out.println(book01.getId());
         System.out.println(book01.getPrice());
 
-        System.out.println(book01.getId());
 
+        /*
+        Flower flower = new Flower(1, "азалия");
+        Bucket bucket = new Bucket(3);
+        bucket.addFlower(flower);
+        bucket.getFlowers()[0].setName("роза");
+        // Flower[] -> Flower
+        // bucket.getFlowers()[0] = null;
+        for (Flower bucketFlower : bucket.getFlowers()) {
+            bucketFlower.setId(10);
+        }
+        */
+
+        // public class в файле м.б только один
+        // имя класса == имя файла
+
+        // не public классов в файле
+        // может быть сколько угодно,
+        // их видно только внутри текущего пакета
 
     }
 }

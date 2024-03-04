@@ -7,4 +7,11 @@ public class Editor {
         this.paintable = paintable;
     }
 
+    public void setPaintable(Paintable paintable) {
+        this.paintable = paintable;
+    }
+    public void show(){
+        paintable.draw();
+    }
+
 }

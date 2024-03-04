@@ -10,5 +10,7 @@ public class Image implements Paintable{
        System.out.println(nameOfImage);
    }
 
+    // хранит данные об изображении, в т.ч ссылку на файл
+    // функционал - метод отрисовки изображения (sout(название изображения))
 
 }
