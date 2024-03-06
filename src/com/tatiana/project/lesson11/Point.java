@@ -20,8 +20,8 @@ public class Point implements Cloneable{
     }
 
     @Override
-    public boolean equals(Object o) { //o - это объект, который передается
-        if (this == o) return true;   //Object - это тип объекта, у которого вызывается equals
+    public boolean equals(Object o) {
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Point point = (Point) o;
         return x == point.x && y == point.y;
@@ -38,6 +38,7 @@ public class Point implements Cloneable{
         //или реализация клонирования родителя
        try {
            return (Point) super.clone(); //создание поверхностной (неглубокой) копии объекта
+           //оба объекта будут ссылаться на один и тот же адрес в памяти
        } catch (CloneNotSupportedException e) {
            System.out.println("Клонирование не поддерживается");
            return null;
