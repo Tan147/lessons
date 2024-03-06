@@ -19,5 +19,7 @@ public class Task11 {
         Editor editor = new Editor(forestAndAnimalGallery);
 
 
+
+
     }
 }
