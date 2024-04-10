@@ -1,5 +1,8 @@
 package com.tatiana.project.lesson14;
 
+import com.tatiana.project.lesson14.properties.service.Service;
+import com.tatiana.project.lesson14.properties.vehicle.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

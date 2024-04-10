@@ -13,6 +13,7 @@ public class FruitStorage {
     // коллекция fruits, для хранения экземпляров FruitToStorageInfo
     // TODO: КОЛЛЕКЦИЮ ВЫБРАТЬ САМОСТОЯТЕЛЬНО
 
+
     public FruitStorage(int numberOfSlots) {
         this.numberOfSlots = numberOfSlots;
     }
@@ -28,6 +29,9 @@ public class FruitStorage {
         //   В противном случае добавлять toStorageInfo в коллекцию fruits.
         //   numberOfSlots уменьшается на значение count добавляемого фрукта.
         // 4. в хранилище нельзя добавить больше numberOfSlots фруктов
+
+
+
         return false;
     }
 

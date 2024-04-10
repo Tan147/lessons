@@ -11,6 +11,7 @@ public class FruitToStorageInfo {
 
     // конструктор, принимающий значения всех свойств + проверки
     public FruitToStorageInfo(FruitType type, double price, int count) {
+        if (price <= 0 || count <= 0) throw new IllegalArgumentException();
         this.type = type;
         this.price = price;
         this.count = count;

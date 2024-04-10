@@ -1,8 +1,5 @@
 package com.tatiana.project.lesson14.methods;
 
-import com.tatiana.project.lesson14.PairContainer;
-import com.tatiana.project.lesson14.User;
-
 import java.time.LocalDate;
 import java.time.temporal.Temporal;
 
@@ -19,7 +16,8 @@ public class GenericMethods {
         Integer integer = 34; //число для поиска
 
         boolean result = GenericMethods.<String>inArray(strings, string);
-        //здесь мы конкретно указали тип String, т.е. в метод можно передать строку и его наследники (но не супертипы) из T
+        //здесь мы конкретно указали тип String, т.е. в метод можно передать строку и его наследники
+        // (но не супертипы) из T
 
         result = GenericMethods.<Number>inArray(integers, integer);
         //тип Number - в метод можно передать тип Number и его наследники (но не супертипы)

@@ -1,25 +1,25 @@
 package com.tatiana.project.lesson09;
 
-public interface Colorable extends
-                Runnable, Cloneable {
-    default String getColor(){
+// можно использовать в качестве супертипа
+// нельзя создать экземпляр
+// не могут иметь не static свойств
+// не могут иметь конструкторов
+// могут наследоваться от других интерфейсов (множественное наследование разрешено)
+public interface Colorable extends Runnable, Cloneable {
+
+    // методы с реализацией могут быть default или static
+    // должен быть реализован в классе,
+    // если класс реализует несколько интерфейсов с одинаковыми default методами
+    /* public по умолчанию */
+    default String getColor() {
         return "red";
     }
+
+    // абстрактные методы без реализации
+    // должны быть реализованы в классе
+    /* public abstract по умолчанию */
     void color(String color);
 
+    /* public abstract по умолчанию */
+    void setDefaultColor();
 }
-
-/*
-interface A {
-    void doSmth(int number);
-}
-interface B {
-    void doSmth(int number);
-}
-class AB implements A, B {
-    @Override
-    public void doSmth(int number) {
-        System.out.println();
-    }
-}
-*/
