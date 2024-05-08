@@ -46,8 +46,8 @@
 Основные методы:
 1. put - добавление данных в буфер (смещение position)
 2. get - получение данных из буфера (смещение position)
-3. flip - устанавливает limit к текущей position, а position на 0 (для записи или get операций)
-4. clear - устанавливает limit к capacity, а position на 0 (для чтения или put операций)
+3. flip - устанавливает limit к текущей position, а position на 0 (для get операций)
+4. clear - устанавливает limit к capacity, а position на 0 (для put операций)
 5. rewind - устанавливает position на 0 (для повторного чтения)
 
 ### 2. Channel - канал ввода - вывода
